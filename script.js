@@ -24,6 +24,17 @@ console.log(result)
 
 function duplicateElement() {
 let array = [1, 2, 2, 3, 4, 4, 5];
-let result = array.filter((item, index, array)=> array.indexOf(item) === index);
+// let result = array.filter((item, index, array)=> array.indexOf(item) === index);
+let result = []
+for(let item of array) {
+    if(!result.includes(item)) {
+        result.push(item)
+    }
+}
 console.log(result)
 }
+
+duplicateElement()
+
+// let items = ["apple", "banana", "apple", "cherry", "banana"]; 
+// let result = items.reduce((sum, current) => )
